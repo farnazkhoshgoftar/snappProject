@@ -1,0 +1,97 @@
+.tabsContainer {
+    background-color: #cadae2;
+    padding: 50px 10px;
+}
+
+
+/* ======================================================================================== */
+
+.tabsContainer h2 {
+    font-size: 32px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.tabsContainer h1 {
+    font-size: 32px;
+    color: #00b36e;
+    text-shadow: 0 2px 5px #dadfe0;
+}
+
+.tabsContainer p {
+    font-size: 22px;
+    line-height: 40px;
+    margin: 20px 0;
+    color: #5d5e5e;
+}
+
+.tabsContainer li {
+    margin-bottom: 15px;
+    color: #5D5E57;
+}
+
+.tabsContainer img {
+    width: 25%;
+    height: 198px;
+    margin-left: 20px;
+}
+
+.tabsContainer .text {
+    width: 85%;
+}
+
+.tabChild {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* ======================================================================================== */
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.tabsHeader li {
+    width: 238px;
+    cursor: pointer;
+    background-color: #00d170;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 0 1px #00adbc, 0 0.65rem 1rem rgba(48, 77, 105, 0.1), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border: solid 1px #00ef74;
+    border-radius: 0 3px 3px 0;
+    padding: 25px 10px;
+    margin: 15px 0;
+    color: #eee;
+    font-weight: 600;
+}
+
+.tabContent {
+    padding: 80px 40px;
+    height: auto;
+    min-height: 500px;
+    width: 900px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 16px 22px 2px rgba(74, 94, 127, 0.114), 0px 15px 56px 0px rgba(0, 0, 0, 0.1), 0.5rem 1rem 2rem rgba(36, 72, 105, 0.15);
+}
+
+.tabsHeader li.active,
+.tabsHeader li:hover {
+    background-color: #00b36e;
+}
+
+
+/* ======================================================================================== */
+
+@media screen and (max-width:1140px) {
+    .tabsContainer {
+        display: none
+    }
+}

@@ -1,0 +1,167 @@
+.Header {
+    width: calc(100% - 2 * 16%);
+    position: relative;
+    padding: 32px 16%;
+    background: url(../../assets/img/main-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: auto;
+}
+
+
+/* ===================================================================================== */
+
+
+/* responsive for deskTop */
+
+.deskTop .content {
+    text-align: center;
+}
+
+.deskTop .content h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px 1px 5px black;
+}
+
+.deskTop .content h6 {
+    color: white;
+    font-size: 32px;
+    text-shadow: -1px 1px 5px black;
+    margin: 10px 0;
+}
+
+.deskTop .content span {
+    color: #00ef74;
+}
+
+.deskTop .content p {
+    font-size: 18px;
+    margin: 20px 0 40px 0;
+    line-height: 28px;
+    color: white;
+    text-shadow: -1px 1px 5px black;
+}
+
+.deskTop .content .sendButton {
+    width: 140px;
+    height: 70px;
+    color: white;
+    font-size: 18px;
+    background-color: #00d170;
+    outline: noe;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.deskTop .content .phoneNumber {
+    height: 48px;
+    width: 270px;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.deskTop .downloadBox {
+    width: 440px;
+    margin: auto;
+}
+
+.deskTop .downloadBox img:nth-child(odd) {
+    margin-left: 10px;
+}
+
+.deskTop .downloadBox img {
+    width: calc(50% - 10px);
+    height: 60px;
+}
+
+
+/* ===================================================================================== */
+
+
+/* responsive for mobile */
+
+.mobile .content {
+    text-align: center;
+    height: auto;
+}
+
+.mobile .content .downloadText,
+.or,
+.getDownloadLink,
+.otherMethods {
+    color: white;
+    font-size: 26px;
+    text-shadow: -1px 1px 5px black;
+    margin: 20px;
+    text-align: center;
+}
+
+.mobile .otherMethods,
+.getDownloadLink {
+    font-size: 14px;
+}
+
+.mobile .content .downloadText span {
+    color: #00ef74;
+}
+
+.mobile img {
+    width: 60%;
+    height: 60px;
+    display: block;
+    margin: 15px auto;
+}
+
+.mobile .downloadSms {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile .downloadSms .phoneNumber {
+    height: 38px;
+    width: 60%;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.mobile .downloadSms .sendButton {
+    width: 40%;
+    height: 60px;
+    color: white;
+    font-size: 18px;
+    background-color: #00d170;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ===================================================================================== */
+
+@media screen and (max-width: 720px) {
+    .Header {
+        width: calc(100% - 2 * 10%);
+        padding: 20px 10%;
+    }
+    .mobile {
+        display: block;
+    }
+    .deskTop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .mobile {
+        display: none;
+    }
+    .deskTop {
+        display: block;
+    }
+}

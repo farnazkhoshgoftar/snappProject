@@ -1,0 +1,114 @@
+.blogNavbar {
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+    height: 200px;
+}
+
+
+/* ===================================================================================== */
+
+
+/* responsive for mobile */
+
+.blogNavbar .mobileMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.blogNavbar .mobileMenu .rightBox .logo {
+    width: 100px;
+    height: 35px;
+}
+
+.blogNavbar .mobileMenu #myLinks {
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    /* display: none; */
+    width: calc(100% - 20px);
+    padding: 10px;
+    transition: 1s;
+}
+
+.blogNavbar .mobileMenu #myLinks .subMenuContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blogNavbar .mobileMenu #myLinks .subMenuContainer .subMenu {
+    /* display: none; */
+    position: absolute;
+    top: 30px;
+    z-index: 20;
+    background-color: white;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.blogNavbar .mobileMenu #myLinks .subMenuContainer .subMenu li>a {
+    color: #333;
+    font-size: 10px;
+}
+
+.blogNavbar .mobileMenu #myLinks .arrow {
+    color: #00ef74;
+}
+
+.blogNavbar .mobileMenu #myLinks li {
+    display: block;
+    width: calc(100% - 10px);
+    border-bottom: 1px solid #e8e8e8;
+    padding: 5px;
+}
+
+.blogNavbar .mobileMenu #myLinks li>a {
+    color: #00ef74;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.blogNavbar .mobileMenu #myLinks li:last-child {
+    border-bottom: none;
+}
+
+.blogNavbar .mobileMenu .leftBox .searchIcon {
+    color: #00ef74;
+    height: 41px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* ===================================================================================== */
+
+
+/* burger menu */
+
+.blogNavbar .mobileMenu #containerBurgerMenu {
+    margin-right: 30px;
+    display: inline-block;
+    width: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #00ef74;
+    border-radius: 3px;
+}
+
+.blogNavbar .mobileMenu .lines {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 2px;
+    transition: 0.4s;
+}
+
+
+/* ===================================================================================== */

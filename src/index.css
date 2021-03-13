@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================================================================== */
+
+@font-face {
+  font-family: myFont;
+  src: url(./assets/fonts/IRANSansWeb.ttf);
+}
+
+body * {
+  font-family: myFont !important;
+}

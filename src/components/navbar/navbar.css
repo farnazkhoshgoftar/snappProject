@@ -1,0 +1,46 @@
+.navbar{
+    width: calc(100% - 20px);
+    padding: 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: white;
+    border-top: 2px solid #00d170;
+}
+/* ===================================================================== */
+.navbar .rightBox {
+    display: flex;
+    align-items: center;
+}
+.navbar .rightBox .logo{
+    width: 90px;
+    height: 30px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+/* ===================================================================== */
+.navbar .leftBox .snapDriver {
+    background: #00d170;
+    padding: 10px 14px;
+    border-radius: 33px;
+    color: white;
+}
+
+.navbar .leftBox .snapDriver:hover {
+    background: #16ad5f;
+    transition: 0.4s;
+}
+/* ===================================================================== */
+@media screen and (min-width: 1140px) {
+    .navbar{
+        padding:20px 4%;
+        width: calc(100% - 2*4%);
+        position: static;
+    }
+    .navbar .rightBox .hamburger{
+        display: none;
+    }
+}
